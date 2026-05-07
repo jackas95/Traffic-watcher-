@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
-    header { background: #111; color: white; padding: 16px; }
-    h1 { margin: 0; font-size: 24px; }
-    .sub { color: #ccc; font-size: 14px; margin-top: 4px; }
-    .controls { padding: 12px; background: white; position: sticky; top: 0; }
-    button { padding: 10px 12px; margin: 4px; border-radius: 8px; border: 1px solid #ccc; background: white; }
-    .incident { background: white; margin: 12px; padding: 14px; border-radius: 12px; box-shadow: 0 1px 4px #ccc; }
-    .type { font-weight: bold; font-size: 18px; }
-    .time { color: #666; font-size: 13px; margin-top: 4px; }
-    .road { margin-top: 8px; font-size: 16px; }
-    .note { margin-top: 6px; color: #444; }
-    a { display: inline-block; margin-top: 10px; color: #0066cc; }
+    header { background: #111; color: white; padding: 18px; }
+    h1 { margin: 0; font-size: 30px; }
+    .sub { color: #ccc; font-size: 16px; margin-top: 6px; }
+    .status { padding: 12px 16px; background: #fff; font-size: 14px; color: #555; }
+    .controls { padding: 12px; background: white; position: sticky; top: 0; z-index: 10; }
+    button { padding: 10px 12px; margin: 4px; border-radius: 8px; border: 1px solid #ccc; background: white; font-size: 15px; }
+    .incident { background: white; margin: 12px; padding: 16px; border-radius: 14px; box-shadow: 0 1px 5px #ccc; }
+    .major { border-left: 8px solid #b00020; }
+    .type { font-weight: bold; font-size: 22px; }
+    .badge { background: #b00020; color: white; border-radius: 999px; padding: 3px 8px; font-size: 12px; margin-left: 8px; }
+    .time { color: #666; font-size: 14px; margin-top: 5px; }
+    .road { margin-top: 10px; font-size: 19px; }
+    .note { margin-top: 7px; color: #444; font-size: 16px; }
+    .copy { margin-top: 12px; background: #f1f1f1; padding: 10px; border-radius: 8px; font-size: 15px; }
+    a { display: inline-block; margin-top: 12px; color: #0066cc; font-size: 16px; }
   </style>
 </head>
 <body>
@@ -25,55 +29,76 @@
   <div class="sub">London / Southwestern Ontario incident dashboard</div>
 </header>
 
+<div class="status" id="status">Last updated: loading...</div>
+
 <div class="controls">
   <button onclick="showAll()">Show all</button>
   <button onclick="filterType('Collision')">Collisions</button>
   <button onclick="filterType('Closure')">Closures</button>
   <button onclick="filterType('Hazard')">Hazards</button>
+  <button onclick="refreshData()">Refresh</button>
 </div>
 
 <div id="incidents"></div>
 
 <script>
-const incidents = [
+let incidents = [
   {
     type: "Collision",
     road: "401 EB near Highbury Ave",
-    time: "Reported 6 minutes ago",
+    minutesAgo: 4,
     note: "Possible slowdown approaching London.",
+    major: true,
     map: "https://www.google.com/maps/search/401+Highbury+London+Ontario"
   },
   {
     type: "Hazard",
     road: "Wellington Rd near Commissioners",
-    time: "Reported 14 minutes ago",
+    minutesAgo: 12,
     note: "Object reported in roadway.",
+    major: false,
     map: "https://www.google.com/maps/search/Wellington+Commissioners+London+Ontario"
   },
   {
     type: "Closure",
     road: "Richmond St near Oxford",
-    time: "Reported 22 minutes ago",
+    minutesAgo: 25,
     note: "Lane restriction or blocked section.",
+    major: false,
     map: "https://www.google.com/maps/search/Richmond+Oxford+London+Ontario"
   }
 ];
+
+function updateStatus() {
+  const now = new Date();
+  document.getElementById("status").innerText =
+    "Last updated: " + now.toLocaleTimeString();
+}
 
 function render(list) {
   const box = document.getElementById("incidents");
   box.innerHTML = "";
 
-  list.forEach(item => {
-    box.innerHTML += `
-      <div class="incident">
-        <div class="type">${item.type}</div>
-        <div class="time">${item.time}</div>
-        <div class="road">${item.road}</div>
-        <div class="note">${item.note}</div>
-        <a href="${item.map}" target="_blank">Open in map</a>
-      </div>
-    `;
-  });
+  list
+    .sort((a, b) => a.minutesAgo - b.minutesAgo)
+    .forEach(item => {
+      const isNew = item.minutesAgo <= 10;
+      const radioLine = `${item.type} reported on ${item.road}. ${item.note}`;
+
+      box.innerHTML += `
+        <div class="incident ${item.major ? "major" : ""}">
+          <div class="type">
+            ${item.type}
+            ${isNew ? '<span class="badge">NEW</span>' : ''}
+          </div>
+          <div class="time">Reported ${item.minutesAgo} minutes ago</div>
+          <div class="road">${item.road}</div>
+          <div class="note">${item.note}</div>
+          <div class="copy"><strong>Radio line:</strong> ${radioLine}</div>
+          <a href="${item.map}" target="_blank">Open in map</a>
+        </div>
+      `;
+    });
 }
 
 function showAll() {
@@ -84,7 +109,12 @@ function filterType(type) {
   render(incidents.filter(i => i.type === type));
 }
 
-render(incidents);
+function refreshData() {
+  updateStatus();
+  render(incidents);
+}
+
+refreshData();
 </script>
 
 </body>
