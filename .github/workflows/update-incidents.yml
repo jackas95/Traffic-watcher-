@@ -20,7 +20,7 @@ jobs:
         run: |
           curl -L "https://511on.ca/api/v2/get/event?format=json&lang=en" -o raw-events.json
 
-                    python3 << 'PY'
+          python3 << 'PY'
           import json
           import re
 
@@ -32,15 +32,14 @@ jobs:
               "owen sound", "kincardine", "walkerton", "port stanley",
               "highbury", "wellington", "wonderland", "commissioners",
               "hwy 401", "highway 401", "hwy 402", "highway 402",
-              "hwy 4", "highway 4", "hwy 7", "highway 7", "hwy 8", "highway 8",
-              "hwy 21", "highway 21", "hwy 23", "highway 23", "hwy 26", "highway 26",
-              "hwy 40", "highway 40", "hwy 77", "highway 77"
+              "hwy 4", "highway 4", "hwy 7", "highway 7",
+              "hwy 21", "highway 21"
           ]
 
           EXCLUDE_KEYWORDS = [
-              "nipissing", "sudbury", "thunder bay", "timmins", "north bay",
-              "ottawa", "kingston", "mattawa", "cartier", "bissett creek",
-              "toronto", "mississauga", "brampton", "durham", "york region"
+              "nipissing", "sudbury", "thunder bay", "timmins",
+              "ottawa", "kingston", "mattawa", "cartier",
+              "toronto", "mississauga", "brampton"
           ]
 
           def normalize(text):
@@ -48,13 +47,13 @@ jobs:
 
           def in_coverage(text):
               text = normalize(text)
+
               if any(word in text for word in EXCLUDE_KEYWORDS):
                   return False
 
               if any(word in text for word in COVERAGE_KEYWORDS):
                   return True
 
-              # Keep 401/402 generally, since you want Windsor–KW and Sarnia–London corridors.
               if re.search(r"\b(401|402)\b", text):
                   return True
 
@@ -66,7 +65,12 @@ jobs:
               if any(word in t for word in ["collision", "accident", "crash"]):
                   return "Collision"
 
-              if any(word in t for word in ["all lanes closed", "road closed", "closure", "closed"]):
+              if any(word in t for word in [
+                  "closed",
+                  "closure",
+                  "all lanes closed",
+                  "road closed"
+              ]):
                   return "Closure"
 
               return "Hazard"
@@ -74,8 +78,10 @@ jobs:
           def make_radio(event_type, road):
               if event_type == "Collision":
                   return f"A collision on {road}."
+
               if event_type == "Closure":
                   return f"A closure on {road}."
+
               return f"A traffic hazard on {road}."
 
           with open("raw-events.json", "r", encoding="utf-8") as f:
@@ -85,11 +91,17 @@ jobs:
 
           for event in data:
               road = event.get("RoadwayName") or "Unknown road"
+
               direction = event.get("DirectionOfTravel")
               if direction:
                   road = f"{road} {direction}"
 
-              description = event.get("Description") or event.get("Comment") or "Incident reported."
+              description = (
+                  event.get("Description")
+                  or event.get("Comment")
+                  or "Incident reported."
+              )
+
               location_text = f"{road} {description}"
 
               if not in_coverage(location_text):
@@ -103,7 +115,7 @@ jobs:
                   "minutesAgo": 0,
                   "note": description,
                   "source": "511",
-                  "major": bool(event.get("IsFullClosure")) or "all lanes closed" in normalize(description),
+                  "major": bool(event.get("IsFullClosure")),
                   "radio": make_radio(event_type, road)
               })
 
@@ -111,11 +123,14 @@ jobs:
               json.dump(output, f, indent=2)
           PY
 
-       - name: Commit updated incidents
+      - name: Commit updated incidents
         run: |
           git config user.name "traffic-watcher-bot"
           git config user.email "traffic-watcher-bot@users.noreply.github.com"
+
           git pull --rebase origin main
+
           git add incidents.json
           git commit -m "Update incidents" || echo "No changes to commit"
+
           git push
