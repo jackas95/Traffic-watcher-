@@ -128,7 +128,7 @@ jobs:
           git config user.name "traffic-watcher-bot"
           git config user.email "traffic-watcher-bot@users.noreply.github.com"
 
-          git pull --rebase origin main
+          git pull origin main
 
           git add incidents.json
           git commit -m "Update incidents" || echo "No changes to commit"
