@@ -1,65 +1,1946 @@
 [
   {
-    "type": "Collision",
-    "road": "HWY 533 Both Directions",
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
     "minutesAgo": 0,
-    "note": "Flooding on HWY 533 Both Directions  between SEC HWY 656-LA CAVE RD, Mattawa and HWY 63 - END OF HWY, Nipissing. All lanes closed.",
-    "source": "511",
-    "major": true,
-    "radio": "A collision on HWY 533 Both Directions."
-  },
-  {
-    "type": "Collision",
-    "road": "HWY 7044 Southbound",
-    "minutesAgo": 0,
-    "note": "Flooding on HWY 7044 Southbound  at Hwy 144, Cartier. Lane and SOUTH shoulder closed.",
+    "note": "Nightly Construction on HWY 400 Northbound  between MAJOR MACKENZIE DRIVE and TESTON ROAD, Vaughan. 2 Left(with HOV) Lane(s).",
     "source": "511",
     "major": false,
-    "radio": "A collision on HWY 7044 Southbound."
+    "radio": "A traffic hazard on HWY 400 Northbound."
   },
   {
-    "type": "Collision",
-    "road": "HWY 17 Westbound",
-    "minutesAgo": 0,
-    "note": "Other on HWY 17 Westbound  at MOSQUITO TRAIL, Bissett Creek. 2 lanes and WEST shoulder closed.",
-    "source": "511",
-    "major": false,
-    "radio": "A collision on HWY 17 Westbound."
-  },
-  {
-    "type": "Collision",
-    "road": "HWY 17 Eastbound",
-    "minutesAgo": 0,
-    "note": "Flooding on HWY 17 Eastbound  at OLD WOMAN BAY PICNIC AREA, Algoma. Lane and EAST shoulder closed.",
-    "source": "511",
-    "major": false,
-    "radio": "A collision on HWY 17 Eastbound."
-  },
-  {
-    "type": "Collision",
-    "road": "HWY 805 Both Directions",
-    "minutesAgo": 0,
-    "note": "Flooding on HWY 805 Both Directions  at SEC HWY 539A, River Valley. All lanes closed.",
-    "source": "511",
-    "major": true,
-    "radio": "A collision on HWY 805 Both Directions."
-  },
-  {
-    "type": "Collision",
-    "road": "HWY 607 Both Directions",
-    "minutesAgo": 0,
-    "note": "Flooding on HWY 607 Both Directions  between HWY 64 (END OF HWY), Alban and BAKER'S BAY RD(E), Bigwood. All lanes closed.",
-    "source": "511",
-    "major": true,
-    "radio": "A collision on HWY 607 Both Directions."
-  },
-  {
-    "type": "Collision",
+    "type": "Closure",
     "road": "HWY 401 Eastbound",
     "minutesAgo": 0,
-    "note": "Disabled Vehicle on HWY 401 Eastbound COLLECTOR at ALLEN ROAD, Toronto. Left shoulder and left lane closed.",
+    "note": "Continuous Construction on HWY 401 Eastbound On-ramp at Highway 4 / Colonel Talbot Rd, London. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 401 Westbound Off-ramp at Highway 4 / Colonel Talbot Rd, London. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 401 Westbound On-ramp at Highway 4 / Colonel Talbot Rd, London. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 401 Eastbound Off-ramp at Highway 4 / Colonel Talbot Rd, London. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "OJIBWAY (7902) Southbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on OJIBWAY (7902) Southbound  between Railroad Tracks and Railroad Tracks, Windsor. 1 Left Lane(s).",
     "source": "511",
     "major": false,
-    "radio": "A collision on HWY 401 Eastbound."
+    "radio": "A traffic hazard on OJIBWAY (7902) Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 89 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 89 Westbound  between HWY 400 and MONO-ADJALA TOWNLINE ROAD, Essa. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 89 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 93 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 93 Southbound  between HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay and HWY 400, Springwater. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 93 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 93 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 93 Northbound  between HWY 400, Springwater and HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 93 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 89 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 89 Eastbound  between MONO-ADJALA TOWNLINE ROAD and HWY 400, Essa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 89 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 93 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 93 Southbound  between HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay and HWY 400, Springwater. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 93 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 93 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 93 Northbound  between HWY 400, Springwater and HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 93 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 11 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 11 Southbound  between SEVERN RIVER BRIDGE/WEST BRANCH, Severn and HWY 400, Oro Medonte. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 11 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 11 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 11 Northbound  between HWY 400, Oro Medonte and SEVERN RIVER BRIDGE/WEST BRANCH, Severn. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 11 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Southbound  between HWY 11 JCT, Springwater and MAPLEVIEW DRIVE, Barrie. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Southbound  between SEVERN RIVER BRIDGE, Tay and HWY 11 JCT, Springwater. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Southbound  between MAPLEVIEW DRIVE, Barrie and CANAL RD., Bradford. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Northbound  between MAPLEVIEW DRIVE, Barrie and HWY 11 JCT, Springwater. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Northbound  between CANAL RD., Bradford and MAPLEVIEW DRIVE, Barrie. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Northbound  between HWY 11 JCT, Springwater and SEVERN RIVER BRIDGE, Tay. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 404 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 404 Northbound  between BLOOMINGTON ROAD and VANDORF SIDEROAD, Aurora. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 404 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound Collector between 5TH LINE and 9TH CONCESSION, Bradford. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound Collector between 9TH CONCESSION and 5TH LINE, Bradford. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 7A Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 7A Eastbound  between N Jct Of Hwy 35/Twigg Rd, Nestleton and BEERS RD, Bethany. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 7A Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 40 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 40 Northbound  between Stanley Line, Wallaceburg and Courtright Line / County Road 80, Sarnia. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 40 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 401 Eastbound On-ramp at BROCK ROAD, Pickering. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 7 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 7 Eastbound  between County Road 32 / 3rd Township Road and Elmira Road / County Road 86, Guelph. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 7 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 7 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 7 Westbound  between Elmira Road / County Road 86 and County Road 32 / 3rd Township Road, Guelph. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 7 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 401 Eastbound  between Wallbridge Loyalist Rd (IC 538)/CR 1, Belleville and Palace Rd (IC 582)/CR 5, Napanee. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 400 Northbound  between INNISFIL BEACH RD - SIMCOE ROAD 21 and INNISFIL BEACH RD - SIMCOE ROAD 21, Innisfil. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 400 Southbound  between INNISFIL BEACH RD - SIMCOE ROAD 21 and INNISFIL BEACH RD - SIMCOE ROAD 21, Innisfil. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Northbound  between HWY 11 JCT, Springwater and SEVERN RIVER BRIDGE, Tay. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Southbound  between SEVERN RIVER BRIDGE, Tay and HWY 11 JCT, Springwater. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 11 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 11 Northbound  between HWY 400, Oro Medonte and SEVERN RIVER BRIDGE/WEST BRANCH, Severn. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 11 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound  between INNISFIL BEACH RD - SIMCOE ROAD 21 and INNISFIL BEACH RD - SIMCOE ROAD 21, Innisfil. 2 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Northbound  between CANAL RD., Bradford and MAPLEVIEW DRIVE, Barrie. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Southbound  between MAPLEVIEW DRIVE, Barrie and CANAL RD., Bradford. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Northbound  between MAPLEVIEW DRIVE, Barrie and HWY 11 JCT, Springwater. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Southbound  between HWY 11 JCT, Springwater and MAPLEVIEW DRIVE, Barrie. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 11 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 11 Southbound  between SEVERN RIVER BRIDGE/WEST BRANCH, Severn and HWY 400, Oro Medonte. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 11 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 89 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 89 Eastbound  between MONO-ADJALA TOWNLINE ROAD and HWY 400, Essa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 89 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 89 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 89 Westbound  between HWY 400 and MONO-ADJALA TOWNLINE ROAD, Essa. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 89 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 93 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 93 Northbound  between HWY 400, Springwater and HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 93 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 93 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 93 Southbound  between HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay and HWY 400, Springwater. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 93 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 89 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 89 Westbound  between HWY 400 and MONO-ADJALA TOWNLINE ROAD, Essa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 89 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 89 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 89 Eastbound  between MONO-ADJALA TOWNLINE ROAD and HWY 400, Essa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 89 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 93 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 93 Southbound  between HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay and HWY 400, Springwater. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 93 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 93 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 93 Northbound  between HWY 400, Springwater and HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 93 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound  between INNISFIL BEACH RD - SIMCOE ROAD 21 and INNISFIL BEACH RD - SIMCOE ROAD 21, Innisfil. 2 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound Collector between 5TH LINE and 9TH CONCESSION, Bradford. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound Collector between 9TH CONCESSION and 5TH LINE, Bradford. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Engineering Investigation on HWY 400 Northbound  between SUNNIDALE ROAD and ST VINCENT STREET, Barrie. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound Express between MAJOR MACKENZIE DRIVE and BASS PRO MILLS DRIVE, Vaughan. 3 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound Express between BASS PRO MILLS DRIVE and HIGHWAY 7, Vaughan. 3 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 401 Westbound On-ramp at MALLORYTOWN RD (IC 675)/Leeds & Grenville CR 5, Mallorytown. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 401 Eastbound On-ramp at MALLORYTOWN RD (IC 675)/Leeds & Grenville CR 5, Mallorytown. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound Express between BASS PRO MILLS DRIVE and MAJOR MACKENZIE DRIVE, Vaughan. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 401 Eastbound On-ramp at MALLORYTOWN RD (IC 675)/Leeds & Grenville CR 5, Mallorytown. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 401 Eastbound Off-ramp at MALLORYTOWN RD (IC 675)/Leeds & Grenville CR 5, Mallorytown. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 7 Westbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 7 Westbound  between Conestoga Parkway / Highway 7/Victoria Street and Frederick Street, Kitchener. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 7 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 85 Southbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 85 Southbound  between LANCASTER ST UP IC-KITCHENER and HWY 7 IC-VICTORIA ST-KITCHENER, Kitchener. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 85 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 400 Northbound  between CANAL RD., Bradford and MAPLEVIEW DRIVE, Barrie. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 400 Northbound  between MAPLEVIEW DRIVE, Barrie and HWY 11 JCT, Springwater. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 400 Southbound  between HWY 11 JCT, Springwater and MAPLEVIEW DRIVE, Barrie. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 400 Southbound  between MAPLEVIEW DRIVE, Barrie and CANAL RD., Bradford. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 93 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 93 Southbound  between HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay and HWY 400, Springwater. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 93 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Northbound  between CANAL RD., Bradford and MAPLEVIEW DRIVE, Barrie. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Northbound  between MAPLEVIEW DRIVE, Barrie and HWY 11 JCT, Springwater. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Southbound  between SEVERN RIVER BRIDGE, Tay and HWY 11 JCT, Springwater. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Southbound  between HWY 11 JCT, Springwater and MAPLEVIEW DRIVE, Barrie. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Southbound  between MAPLEVIEW DRIVE, Barrie and CANAL RD., Bradford. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 400 Northbound  between HWY 11 JCT, Springwater and SEVERN RIVER BRIDGE, Tay. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 93 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 93 Northbound  between HWY 400, Springwater and HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 93 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 11 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 11 Northbound  between HWY 400, Oro Medonte and SEVERN RIVER BRIDGE/WEST BRANCH, Severn. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 11 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 11 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 11 Southbound  between SEVERN RIVER BRIDGE/WEST BRANCH, Severn and HWY 400, Oro Medonte. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 11 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 89 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 89 Eastbound  between MONO-ADJALA TOWNLINE ROAD and HWY 400, Essa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 89 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 89 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 89 Eastbound  between MONO-ADJALA TOWNLINE ROAD and HWY 400, Essa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 89 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 93 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 93 Northbound  between HWY 400, Springwater and HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 93 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 93 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 93 Southbound  between HWY 12/ANGELA SCHMIDT FOSTER ROAD, Tay and HWY 400, Springwater. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 93 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 89 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 89 Westbound  between HWY 400 and MONO-ADJALA TOWNLINE ROAD, Essa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 89 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 89 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Moving Maintenance Closure on HWY 89 Westbound  between HWY 400 and MONO-ADJALA TOWNLINE ROAD, Essa. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 89 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 404 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 404 Southbound Off-ramp at HWY 7, Markham-Richmondhill . 1 Left(with HOV) Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 404 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound  between 5TH LINE, Bradford and HWY 9, Kettleby. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound  between HWY 9, Kettleby and 5TH LINE, Bradford. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 404 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 404 Southbound Off-ramp at MAJOR MACKENZIE DRIVE, Markham-Richmondhill . 1 Left(with HOV) Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 404 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 404 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 404 Southbound Off-ramp at MAJOR MACKENZIE DRIVE, Markham-Richmondhill . 1 Left(with HOV) Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 404 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 4 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 4 Southbound  between Dinsley Terrace, Clinton and MacDonald Road, Exeter. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 4 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 420 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 420 Eastbound  between MONTROSE ROAD and STANLEY AVE, Niagara Falls. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 420 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 420 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 420 Westbound  between STANLEY AVE and MONTROSE ROAD, Niagara Falls. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 420 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 405 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 405 Eastbound  between QEW and STANLEY AVE, Niagara-On-The-Lake. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 405 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 400 Southbound  between QUARRY RD/SIMCOE 59 and HWY 12 N JCT, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 405 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 405 Westbound  between STANLEY AVE and QEW, Niagara-On-The-Lake. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 405 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 400 Northbound  between HWY 12 N JCT and HWY 12 N JCT, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound  between HWY 12 N JCT and HWY 12 N JCT, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 427 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 427 Southbound On-ramp at MAJOR MACKENZIE DR, Vaughan. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 427 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 427 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 427 Northbound On-ramp at GIBBS ROAD, . ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 427 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound  between Leeds & Grenville CR 2 (IC 687)- Long Beach, Long Beach and NAPANEE SERVICE CENTER E5 W/B , Odessa. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Eastbound  between NAPANEE SERVICE CENTER E5 W/B , Odessa and Leeds & Grenville CR 2 (IC 687)- Long Beach, Long Beach. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 401 Westbound  between SIMCOE ST and STEVENSON ROAD, Oshawa. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 48 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 48 Southbound  between MOUNT ALBERT ROAD and MOUNT ALBERT ROAD, Mt. Albert. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 48 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 48 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 48 Northbound  between HOLMES POINT ROAD and RIVERSIDE DRIVE, Georgina. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 48 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 403 HAMILTON Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 403 HAMILTON Eastbound  between KING ROAD and KING ROAD, Burlington. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 403 HAMILTON Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 403 HAMILTON Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 403 HAMILTON Westbound  between KING ROAD and KING ROAD, Burlington. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 403 HAMILTON Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 401 Eastbound  between STEWART BLVD (IC 696)/Leeds & Grenville CR 29 (Brockville) and North AUGUSTA RD (IC 698), Brockville. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 401 Eastbound  between STEWART BLVD (IC 696)/Leeds & Grenville CR 29 (Brockville) and North AUGUSTA RD (IC 698), Brockville. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 401 Eastbound Off-ramp at THICKSON ROAD, Whitby. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 401 Eastbound On-ramp at THICKSON ROAD, Whitby. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 401 Westbound On-ramp at THICKSON ROAD, Whitby. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound On-ramp at THICKSON ROAD, Whitby. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound Off-ramp at THICKSON ROAD, Whitby. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Eastbound On-ramp at THICKSON ROAD, Whitby. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound Collector between DUNLOP STREET / SIMCOE ROAD 90 and HWY 26/ BAYFIELD STREET, Barrie. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound On-ramp at DUNLOP STREET / SIMCOE ROAD 90, Barrie. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound  between DUNLOP STREET / SIMCOE ROAD 90 and DUNLOP STREET / SIMCOE ROAD 90, Barrie. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound Collector Off-ramp at DUNLOP STREET / SIMCOE ROAD 90, Barrie. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound Collector Off-ramp at DUNLOP STREET / SIMCOE ROAD 90, Barrie. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound On-ramp at DUNLOP STREET / SIMCOE ROAD 90, Barrie. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound Collector Off-ramp at DUNLOP STREET / SIMCOE ROAD 90, Barrie. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 115 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 115 Northbound  between BOUNDARY RD and HWY 7, Peterborough. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 115 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 15 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 15 Southbound  between HWY 7 and 10TH LINE RD Beckwith, Carleton Place. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 15 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 15 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 15 Northbound  between 10TH LINE RD Beckwith and HWY 7, Carleton Place. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 15 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 403 HAMILTON Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 403 HAMILTON Westbound Off-ramp at HWY 6 SOUTH - GARNER ROAD, Hamilton. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 403 HAMILTON Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 401 Eastbound  between Townline Road / Wellington Rd 33 (286KM), Cambridge and Highway 6 South / Brock Road / Wellington Rd 46 (299KM), Morriston. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 407 ETR Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 407 ETR Eastbound  between SIDELINE 14, Ajax and HARMONY RD N, Oshawa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 407 ETR Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 407 ETR Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 407 ETR Westbound  between HARMONY RD N, Oshawa and SIDELINE 14, Ajax. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 407 ETR Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 412 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 412 Southbound  between HWY 407 and HWY 401, Whitby. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 412 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 412 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 412 Northbound  between HWY 401 and HWY 407, Whitby. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 412 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 406 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 406 Southbound  between QEW and HWY 58, St. Catharines. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 406 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 406 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 406 Northbound  between DECEW ROAD and Sir Isaac Brock Way, Thorold. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 406 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound  between HWY 16 (IC 721B), Johnstown and SHERWOOD SPRINGS RD, Mallorytown. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound  between 5TH LINE RD , Curry Hill and HWY 16 (IC 721B), Johnstown. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound  between HWY 16 (IC 721B), Johnstown and THOUSAND ISLAND PKWY (IC 685), Brockville. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound  between 5TH LINE RD , Curry Hill and HWY 16 (IC 721B), Johnstown. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Eastbound  between HWY 16 (IC 721B), Johnstown and 5TH LINE RD , Curry Hill. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Eastbound  between HWY 16 (IC 721B), Johnstown and 5TH LINE RD , Curry Hill. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 401 Eastbound On-ramp at Highway 4 / Colonel Talbot Rd, London. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 401 Eastbound  between Highway 4 / Colonel Talbot Rd and Highway 4 / Colonel Talbot Rd, London. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Engineering Investigation on HWY 400 Southbound  between ST VINCENT STREET and SUNNIDALE ROAD, Barrie. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 406 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 406 Northbound On-ramp at WOODLAWN ROAD, Welland. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 406 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 406 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 406 Northbound  between GLENDALE AVE and WESTCHESTER AVE, St. Catharines. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 406 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 403 HAMILTON Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 403 HAMILTON Westbound  between Highway 24 / Rest Acres Road and Highway 24 / Rest Acres Road, Brantford. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 403 HAMILTON Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 71 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Engineering Investigation on HWY 71 Northbound  between HWY 17 - LONGBOW CORS and HWY 17 - LONGBOW CORS, . 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 71 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound On-ramp at STEVENSON ROAD, Oshawa. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 401 Eastbound Off-ramp at BROCK ROAD, Pickering. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 401 Eastbound On-ramp at STEVENSON ROAD, Oshawa. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Eastbound On-ramp at HARMONY ROAD, Oshawa. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Moving Maintenance Closure on HWY 401 Eastbound Off-ramp at STEVENSON ROAD, Oshawa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Eastbound Off-ramp at HARMONY ROAD, Oshawa. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound On-ramp at STEVENSON ROAD, Oshawa. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Westbound Collector Off-ramp at BROCK ROAD, Pickering. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 7/12 Southbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 7/12 Southbound  between DURHAM ROAD 13, Sunderland and HIGHWAY 7A, Scugog. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 7/12 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 7/12 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 7/12 Northbound  between HIGHWAY 7A, Scugog and DURHAM ROAD 13, Sunderland. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 7/12 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 400 Southbound  between HWY 9 and AURORA RD., Kettleby. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 406 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 406 Southbound  between PEDESTRIAN BRIDGE and MCGUIRE STREET / RACE STREET, St. Catharines. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 406 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 400 Northbound  between MOONSTONE ROAD/SIMCOE ROAD 19, Oro Medonte and VASEY ROAD/SIMCOE ROAD 23/HWY 12 S JCT, Tay. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 405 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 405 Eastbound  between 6TH CONCESSION ROAD / MEWBURN ROAD and FOUR MILE CREEK RD/ST PAUL AVE/NIAGARA ROAD 100, Niagara-On-The-Lake. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 405 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 406 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 406 Southbound  between CHESTNUT ST and HWY 58, St. Catharines. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 406 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 400 Northbound Off-ramp at LOWER BIG CHUTE ROAD, Tay. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 401 Eastbound Express between BROCK ROAD and BROCK ROAD, Pickering. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 401 Eastbound Collector between BROCK ROAD and BROCK ROAD, Pickering. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 403 HAMILTON Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 403 HAMILTON Westbound  between BRANT STREET and BRANT STREET, Burlington. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 403 HAMILTON Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Eastbound  between HARMONY ROAD and HARMONY ROAD, Oshawa. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 401 Westbound  between BROCK ROAD and BROCK ROAD, Pickering. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 23 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 23 Northbound  between Perth Line 20 / County Road 20 and Perth Line 20 / County Road 20, Russeldale. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 23 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Eastbound On-ramp at HARMONY ROAD, Oshawa. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Westbound On-ramp at SALEM ROAD, Ajax. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Westbound Off-ramp at WESTNEY ROAD, Ajax. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Westbound On-ramp at SALEM ROAD, Ajax. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 35/115 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 35/115 Southbound  between HWY 2 and HWY 401, Clarington. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 35/115 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 406 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 406 Southbound  between MARTINDALE ROAD and MARTINDALE ROAD, St. Catharines. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 406 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 406 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 406 Northbound  between 4TH AVE and MARTINDALE ROAD, St. Catharines. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 406 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "EC ROW (7087) Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on EC ROW (7087) Eastbound  between Ojibway Parkway and Ojibway Parkway, Windsor. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on EC ROW (7087) Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 402 Westbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 402 Westbound  between Mandaumin Rd / County Rd 26 and Mandaumin Rd / County Rd 26, Sarnia. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 402 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 48 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 48 Southbound  between MOUNT ALBERT ROAD and MOUNT ALBERT ROAD, Mt. Albert. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 48 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 85 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 85 Southbound  between WELLINGTON ST UP IC-KITCHENER and HWY 7 IC-VICTORIA ST-KITCHENER, Kitchener. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 85 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 7 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 7 Westbound  between Conestoga Parkway / Highway 7/Victoria Street and Frederick Street, Kitchener. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 7 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 85 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 85 Southbound  between LANCASTER ST UP IC-KITCHENER and HWY 7 IC-VICTORIA ST-KITCHENER, Kitchener. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 85 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound Express between BASS PRO MILLS DRIVE and MAJOR MACKENZIE DRIVE, Vaughan. 2 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 412 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 412 Southbound Off-ramp at HWY 401, Whitby. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 412 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 412 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 412 Northbound On-ramp at HWY 401, Whitby. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 412 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Eastbound Transfer at WHITES ROAD, Pickering. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 7 Westbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 7 Westbound On-ramp at Frederick Street, Kitchener. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 7 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Eastbound On-ramp at WHITES ROAD, Pickering. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Eastbound Collector Off-ramp at BROCK ROAD, Pickering. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Eastbound Off-ramp at HARMONY ROAD, Oshawa. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Eastbound Collector between WHITES ROAD and WHITES ROAD, Pickering. 3 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Westbound  between SALEM ROAD and WESTNEY ROAD, Ajax. 3 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 401 Eastbound On-ramp at WHITES ROAD, Pickering. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Continuous Maintenance on HWY 401 Westbound Off-ramp at SD&G RD 2 & 34 (IC 814)/Lancaster, Lancaster. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 404 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on HWY 404 Northbound  between STOUFFVILLE ROAD, Stouffville-Richmondhill and MULOCK DRIVE, Newmarket. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 404 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 404 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 404 Southbound  between MULOCK DRIVE, Newmarket and STOUFFVILLE ROAD, Stouffville-Richmondhill. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 404 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound Express between BASS PRO MILLS DRIVE and HIGHWAY 7, Vaughan. 3 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Southbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Southbound Collector between BASS PRO MILLS DRIVE and HIGHWAY 7, Vaughan. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Southbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Engineering Investigation on HWY 400 Northbound  between SUNNIDALE ROAD and ST VINCENT STREET, Barrie. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Engineering Investigation on HWY 400 Northbound  between SUNNIDALE ROAD and ST VINCENT STREET, Barrie. 2 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 401 Eastbound  between BROOKDALE AVE (IC 789)/Hwy 138 and MCCONNELL AVE (IC 792), Cornwall. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "QEW Fort Erie Bound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on QEW Fort Erie Bound  between HWY 406, St. Catharines and HWY 420, Niagara Falls. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on QEW Fort Erie Bound."
+  },
+  {
+    "type": "Hazard",
+    "road": "QEW Fort Erie Bound",
+    "minutesAgo": 0,
+    "note": "Nightly Maintenance on QEW Fort Erie Bound  between HWY 420, Niagara Falls and BOWEN ROAD, Fort Erie. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on QEW Fort Erie Bound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 402 Eastbound",
+    "minutesAgo": 0,
+    "note": "Continuous Construction on HWY 402 Eastbound  between Nauvoo Rd / formerly Highway 79, Sarnia and Kerwood Road, Strathroy. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 402 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 4 Northbound",
+    "minutesAgo": 0,
+    "note": "Continuous Maintenance on HWY 4 Northbound  between Medway Road, Arva and Dinsley Terrace, Clinton. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 4 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 23 Northbound",
+    "minutesAgo": 0,
+    "note": "Continuous Maintenance on HWY 23 Northbound  between Highway 7 / Elginfield Road, Elginfield and Wellington Road 87, Harriston. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 23 Northbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 400 Northbound Off-ramp at MAJOR MACKENZIE DRIVE, Vaughan. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 403 HAMILTON Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 403 HAMILTON Eastbound  between BRANT STREET and BRANT STREET, Burlington. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 403 HAMILTON Eastbound."
+  },
+  {
+    "type": "Closure",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 400 Northbound Off-ramp at MAJOR MACKENZIE DRIVE, Vaughan. ALL LANES CLOSED.",
+    "source": "511",
+    "major": true,
+    "radio": "A closure on HWY 400 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Eastbound Collector between BROCK ROAD, Pickering and HARMONY ROAD, Oshawa. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 403 HAMILTON Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 403 HAMILTON Westbound  between BRANT STREET and BRANT STREET, Burlington. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 403 HAMILTON Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 403 HAMILTON Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 403 HAMILTON Eastbound  between BRANT STREET and BRANT STREET, Burlington. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 403 HAMILTON Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 401 Westbound  between North AUGUSTA RD (IC 698) and STEWART BLVD (IC 696)/Leeds & Grenville CR 29 (Brockville), Brockville. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Nightly Construction on HWY 401 Eastbound  between STEWART BLVD (IC 696)/Leeds & Grenville CR 29 (Brockville) and North AUGUSTA RD (IC 698), Brockville. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 3 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 3 Westbound  between Centennial Avenue and Wellington Road, St Thomas. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 3 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 401 Westbound  between MOULINETTE RD (IC 778)/South Stormont CR 35 - Long Sault, Long Sault and UPPER CANADA RD (IC 758), Morrisburg. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 401 Eastbound  between UPPER CANADA RD (IC 758), Morrisburg and MOULINETTE RD (IC 778)/South Stormont CR 35 - Long Sault, Long Sault. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Eastbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound  between HARMONY ROAD, Oshawa and BROCK ROAD, Pickering. 1 Right Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 401 Westbound",
+    "minutesAgo": 0,
+    "note": "Daily Maintenance on HWY 401 Westbound Collector between BROCK ROAD and BROCK ROAD, Pickering. 1 Left Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 401 Westbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 15 Northbound",
+    "minutesAgo": 0,
+    "note": "Daily Construction on HWY 15 Northbound  between SALTER RD, Franktown and HWY 7, Carleton Place. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 15 Northbound."
+  },
+  {
+    "type": "Hazard",
+    "road": "HWY 400 Northbound",
+    "minutesAgo": 0,
+    "note": "Continuous Engineering Investigation on HWY 400 Northbound  between NB EXIT 182 RAGGED RAPIDS RD/Iroquois Cranberry Growers Rd, BALA and MOON R BR GORGIAN BAY TWP, Mactier. 1 Alternating Lane(s).",
+    "source": "511",
+    "major": false,
+    "radio": "A traffic hazard on HWY 400 Northbound."
   }
 ]
