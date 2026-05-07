@@ -1,1 +1,64 @@
+name: Update traffic incidents
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Fetch Ontario 511 events
+        run: |
+          curl -L "https://511on.ca/api/v2/get/event?format=json&lang=en" -o raw-events.json
+
+          python3 << 'PY'
+          import json
+
+          with open("raw-events.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          output = []
+
+          for event in data:
+              event_type = str(event.get("EventType", "")).lower()
+
+              if "accident" not in event_type and "incident" not in event_type:
+                  continue
+
+              road = event.get("RoadwayName") or "Unknown road"
+              direction = event.get("DirectionOfTravel")
+              if direction:
+                  road = f"{road} {direction}"
+
+              description = event.get("Description") or event.get("Comment") or "Incident reported."
+
+              output.append({
+                  "type": "Collision",
+                  "road": road,
+                  "minutesAgo": 0,
+                  "note": description,
+                  "source": "511",
+                  "major": bool(event.get("IsFullClosure")),
+                  "radio": f"A collision on {road}."
+              })
+
+          with open("incidents.json", "w", encoding="utf-8") as f:
+              json.dump(output, f, indent=2)
+          PY
+
+      - name: Commit updated incidents
+        run: |
+          git config user.name "traffic-watcher-bot"
+          git config user.email "traffic-watcher-bot@users.noreply.github.com"
+          git add incidents.json
+          git commit -m "Update incidents" || echo "No changes to commit"
+          git push
