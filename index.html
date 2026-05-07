@@ -2,10 +2,90 @@
 <html>
 <head>
   <title>Traffic Watcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: #111; color: white; padding: 16px; }
+    h1 { margin: 0; font-size: 24px; }
+    .sub { color: #ccc; font-size: 14px; margin-top: 4px; }
+    .controls { padding: 12px; background: white; position: sticky; top: 0; }
+    button { padding: 10px 12px; margin: 4px; border-radius: 8px; border: 1px solid #ccc; background: white; }
+    .incident { background: white; margin: 12px; padding: 14px; border-radius: 12px; box-shadow: 0 1px 4px #ccc; }
+    .type { font-weight: bold; font-size: 18px; }
+    .time { color: #666; font-size: 13px; margin-top: 4px; }
+    .road { margin-top: 8px; font-size: 16px; }
+    .note { margin-top: 6px; color: #444; }
+    a { display: inline-block; margin-top: 10px; color: #0066cc; }
+  </style>
 </head>
-
 <body>
+
+<header>
   <h1>Traffic Watcher</h1>
-  <p>If you're reading this, your site works.</p>
+  <div class="sub">London / Southwestern Ontario incident dashboard</div>
+</header>
+
+<div class="controls">
+  <button onclick="showAll()">Show all</button>
+  <button onclick="filterType('Collision')">Collisions</button>
+  <button onclick="filterType('Closure')">Closures</button>
+  <button onclick="filterType('Hazard')">Hazards</button>
+</div>
+
+<div id="incidents"></div>
+
+<script>
+const incidents = [
+  {
+    type: "Collision",
+    road: "401 EB near Highbury Ave",
+    time: "Reported 6 minutes ago",
+    note: "Possible slowdown approaching London.",
+    map: "https://www.google.com/maps/search/401+Highbury+London+Ontario"
+  },
+  {
+    type: "Hazard",
+    road: "Wellington Rd near Commissioners",
+    time: "Reported 14 minutes ago",
+    note: "Object reported in roadway.",
+    map: "https://www.google.com/maps/search/Wellington+Commissioners+London+Ontario"
+  },
+  {
+    type: "Closure",
+    road: "Richmond St near Oxford",
+    time: "Reported 22 minutes ago",
+    note: "Lane restriction or blocked section.",
+    map: "https://www.google.com/maps/search/Richmond+Oxford+London+Ontario"
+  }
+];
+
+function render(list) {
+  const box = document.getElementById("incidents");
+  box.innerHTML = "";
+
+  list.forEach(item => {
+    box.innerHTML += `
+      <div class="incident">
+        <div class="type">${item.type}</div>
+        <div class="time">${item.time}</div>
+        <div class="road">${item.road}</div>
+        <div class="note">${item.note}</div>
+        <a href="${item.map}" target="_blank">Open in map</a>
+      </div>
+    `;
+  });
+}
+
+function showAll() {
+  render(incidents);
+}
+
+function filterType(type) {
+  render(incidents.filter(i => i.type === type));
+}
+
+render(incidents);
+</script>
+
 </body>
 </html>
