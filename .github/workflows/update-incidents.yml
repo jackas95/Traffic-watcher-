@@ -111,10 +111,11 @@ jobs:
               json.dump(output, f, indent=2)
           PY
 
-      - name: Commit updated incidents
+       - name: Commit updated incidents
         run: |
           git config user.name "traffic-watcher-bot"
           git config user.email "traffic-watcher-bot@users.noreply.github.com"
+          git pull --rebase origin main
           git add incidents.json
           git commit -m "Update incidents" || echo "No changes to commit"
           git push
