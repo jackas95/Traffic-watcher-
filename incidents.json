@@ -1,1 +1,20 @@
-
+[
+  {
+    "type": "Collision",
+    "road": "401 EB near Highbury Ave",
+    "minutesAgo": 3,
+    "note": "Traffic backing up approaching London.",
+    "source": "Waze",
+    "major": true,
+    "radio": "A collision on 401 eastbound near Highbury Avenue."
+  },
+  {
+    "type": "Collision",
+    "road": "Wonderland Rd at Southdale Rd",
+    "minutesAgo": 11,
+    "note": "Delays building through the intersection.",
+    "source": "Waze",
+    "major": false,
+    "radio": "A collision at Wonderland Road and Southdale Road."
+  }
+]
