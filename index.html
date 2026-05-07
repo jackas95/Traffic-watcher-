@@ -154,36 +154,15 @@ let incidents = [];
 
 async function loadIncidents() {
   try {
-    const response = await fetch("https://511on.ca/api/v2/get/event?format=json&lang=en");
-    const data = await response.json();
-
-    incidents = data
-      .filter(event => event.EventType === "accidentsAndIncidents")
-      .map(event => {
-        const reportedMs = event.Reported * 1000;
-        const minutesAgo = Math.max(0, Math.round((Date.now() - reportedMs) / 60000));
-
-        const direction = event.DirectionOfTravel ? " " + event.DirectionOfTravel : "";
-        const road = `${event.RoadwayName || "Unknown road"}${direction}`;
-
-        return {
-          type: "Collision",
-          road: road,
-          minutesAgo: minutesAgo,
-          note: event.Description || event.Comment || "Incident reported.",
-          source: "511",
-          major: event.IsFullClosure || event.Severity === "Major",
-          radio: `A collision on ${road}.`
-        };
-      });
+    const response = await fetch("incidents.json");
+    incidents = await response.json();
 
     updateTime();
     renderFeed();
-
   } catch (error) {
-    console.error("Could not load 511 incidents:", error);
+    console.error("Could not load incidents:", error);
     document.getElementById("updated").innerText =
-      "Could not load 511 data.";
+      "Could not load incident data.";
   }
 }
 
