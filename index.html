@@ -153,59 +153,17 @@ let currentFilter = "Collision";
 let incidents = [];
 
 async function loadIncidents() {
-  // Later, this is where live Waze/511 data will be loaded.
-  // For now, we use sample data in the same shape real data will use.
+  try {
+    const response = await fetch("incidents.json");
+    incidents = await response.json();
 
-  incidents = [
-    {
-      type: "Collision",
-      road: "401 EB near Highbury Ave",
-      minutesAgo: 3,
-      note: "Traffic backing up approaching London.",
-      source: "Waze",
-      major: true,
-      radio: "A collision on 401 eastbound near Highbury Avenue."
-    },
-    {
-      type: "Hazard",
-      road: "Wellington Rd near Commissioners",
-      minutesAgo: 9,
-      note: "Debris reported in centre lane.",
-      source: "Waze",
-      major: false,
-      radio: "A hazard on Wellington Road near Commissioners Road."
-    },
-    {
-      type: "Closure",
-      road: "Richmond St near Oxford",
-      minutesAgo: 24,
-      note: "Lane blocked due to emergency crews.",
-      source: "511",
-      major: false,
-      radio: "A closure on Richmond Street near Oxford Street."
-    },
-    {
-      type: "Collision",
-      road: "Wonderland Rd at Southdale Rd",
-      minutesAgo: 11,
-      note: "Delays building through the intersection.",
-      source: "Waze",
-      major: false,
-      radio: "A collision at Wonderland Road and Southdale Road."
-    },
-    {
-      type: "Collision",
-      road: "Oxford St W near Hyde Park Rd",
-      minutesAgo: 18,
-      note: "Slow traffic in the area.",
-      source: "Waze",
-      major: false,
-      radio: "A collision on Oxford Street West near Hyde Park Road."
-    }
-  ];
-
-  updateTime();
-  renderFeed();
+    updateTime();
+    renderFeed();
+  } catch (error) {
+    console.error("Could not load incidents:", error);
+    document.getElementById("updated").innerText =
+      "Could not load incident data.";
+  }
 }
 
 function updateTime() {
