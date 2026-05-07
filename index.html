@@ -3,118 +3,264 @@
 <head>
   <title>Traffic Watcher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
-    header { background: #111; color: white; padding: 18px; }
-    h1 { margin: 0; font-size: 30px; }
-    .sub { color: #ccc; font-size: 16px; margin-top: 6px; }
-    .status { padding: 12px 16px; background: #fff; font-size: 14px; color: #555; }
-    .controls { padding: 12px; background: white; position: sticky; top: 0; z-index: 10; }
-    button { padding: 10px 12px; margin: 4px; border-radius: 8px; border: 1px solid #ccc; background: white; font-size: 15px; }
-    .incident { background: white; margin: 12px; padding: 16px; border-radius: 14px; box-shadow: 0 1px 5px #ccc; }
-    .major { border-left: 8px solid #b00020; }
-    .type { font-weight: bold; font-size: 22px; }
-    .badge { background: #b00020; color: white; border-radius: 999px; padding: 3px 8px; font-size: 12px; margin-left: 8px; }
-    .time { color: #666; font-size: 14px; margin-top: 5px; }
-    .road { margin-top: 10px; font-size: 19px; }
-    .note { margin-top: 7px; color: #444; font-size: 16px; }
-    .copy { margin-top: 12px; background: #f1f1f1; padding: 10px; border-radius: 8px; font-size: 15px; }
-    a { display: inline-block; margin-top: 12px; color: #0066cc; font-size: 16px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 34px;
+    }
+
+    .sub {
+      color: #ccc;
+      margin-top: 6px;
+      font-size: 16px;
+    }
+
+    .topbar {
+      background: white;
+      padding: 14px 18px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 1px 5px #ccc;
+    }
+
+    .updated {
+      color: #555;
+      font-size: 15px;
+    }
+
+    .new-banner {
+      margin-top: 8px;
+      background: #b00020;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: none;
+    }
+
+    .incident {
+      background: white;
+      margin: 14px;
+      padding: 18px;
+      border-radius: 16px;
+      box-shadow: 0 1px 6px #ccc;
+      border-left: 7px solid transparent;
+      transition: 0.3s;
+    }
+
+    .major {
+      border-left-color: #b00020;
+    }
+
+    .fresh {
+      animation: glow 1.2s ease-in-out 2;
+    }
+
+    @keyframes glow {
+      0% { background: #fff5f5; }
+      50% { background: #ffe3e3; }
+      100% { background: white; }
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .type {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .badge {
+      background: #b00020;
+      color: white;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .source {
+      background: #ddd;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .time {
+      margin-top: 8px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .road {
+      margin-top: 12px;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .note {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    .radio {
+      margin-top: 14px;
+      background: #f1f1f1;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 14px;
+      color: #0066cc;
+      font-size: 17px;
+    }
+
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Traffic Watcher</h1>
-  <div class="sub">London / Southwestern Ontario incident dashboard</div>
+  <div class="sub">London / Southwestern Ontario live incident feed</div>
 </header>
 
-<div class="status" id="status">Last updated: loading...</div>
-
-<div class="controls">
-  <button onclick="showAll()">Show all</button>
-  <button onclick="filterType('Collision')">Collisions</button>
-  <button onclick="filterType('Closure')">Closures</button>
-  <button onclick="filterType('Hazard')">Hazards</button>
-  <button onclick="refreshData()">Refresh</button>
+<div class="topbar">
+  <div class="updated" id="updated"></div>
+  <div class="new-banner" id="banner"></div>
 </div>
 
-<div id="incidents"></div>
+<div id="feed"></div>
 
 <script>
+
 let incidents = [
   {
     type: "Collision",
     road: "401 EB near Highbury Ave",
-    minutesAgo: 4,
-    note: "Possible slowdown approaching London.",
-    major: true,
-    map: "https://www.google.com/maps/search/401+Highbury+London+Ontario"
+    minutesAgo: 3,
+    note: "Traffic backing up approaching London.",
+    source: "Waze",
+    major: true
   },
+
   {
     type: "Hazard",
     road: "Wellington Rd near Commissioners",
-    minutesAgo: 12,
-    note: "Object reported in roadway.",
-    major: false,
-    map: "https://www.google.com/maps/search/Wellington+Commissioners+London+Ontario"
+    minutesAgo: 9,
+    note: "Debris reported in center lane.",
+    source: "Waze",
+    major: false
   },
+
   {
     type: "Closure",
     road: "Richmond St near Oxford",
-    minutesAgo: 25,
-    note: "Lane restriction or blocked section.",
-    major: false,
-    map: "https://www.google.com/maps/search/Richmond+Oxford+London+Ontario"
+    minutesAgo: 24,
+    note: "Lane blocked due to emergency crews.",
+    source: "511",
+    major: false
   }
 ];
 
-function updateStatus() {
+function updateTime() {
   const now = new Date();
-  document.getElementById("status").innerText =
+
+  document.getElementById("updated").innerText =
     "Last updated: " + now.toLocaleTimeString();
 }
 
-function render(list) {
-  const box = document.getElementById("incidents");
-  box.innerHTML = "";
+function renderFeed() {
 
-  list
-    .sort((a, b) => a.minutesAgo - b.minutesAgo)
-    .forEach(item => {
-      const isNew = item.minutesAgo <= 10;
-      const radioLine = `${item.type} reported on ${item.road}. ${item.note}`;
+  incidents.sort((a, b) => a.minutesAgo - b.minutesAgo);
 
-      box.innerHTML += `
-        <div class="incident ${item.major ? "major" : ""}">
-          <div class="type">
-            ${item.type}
-            ${isNew ? '<span class="badge">NEW</span>' : ''}
-          </div>
-          <div class="time">Reported ${item.minutesAgo} minutes ago</div>
-          <div class="road">${item.road}</div>
-          <div class="note">${item.note}</div>
-          <div class="copy"><strong>Radio line:</strong> ${radioLine}</div>
-          <a href="${item.map}" target="_blank">Open in map</a>
+  const feed = document.getElementById("feed");
+  feed.innerHTML = "";
+
+  const newCount = incidents.filter(i => i.minutesAgo <= 10).length;
+
+  const banner = document.getElementById("banner");
+
+  if (newCount > 0) {
+    banner.style.display = "block";
+    banner.innerText = newCount + " new incident" + (newCount > 1 ? "s" : "");
+  } else {
+    banner.style.display = "none";
+  }
+
+  incidents.forEach(item => {
+
+    const isNew = item.minutesAgo <= 10;
+
+    const radioLine =
+      `${item.type} reported on ${item.road}. ${item.note}`;
+
+    feed.innerHTML += `
+      <div class="incident ${item.major ? "major" : ""} ${isNew ? "fresh" : ""}">
+
+        <div class="header-row">
+          <div class="type">${item.type}</div>
+
+          ${isNew ? '<div class="badge">NEW</div>' : ''}
+
+          <div class="source">${item.source}</div>
         </div>
-      `;
-    });
+
+        <div class="time">
+          Reported ${item.minutesAgo} minutes ago
+        </div>
+
+        <div class="road">
+          ${item.road}
+        </div>
+
+        <div class="note">
+          ${item.note}
+        </div>
+
+        <div class="radio">
+          <strong>Radio line:</strong><br>
+          ${radioLine}
+        </div>
+
+      </div>
+    `;
+  });
+
 }
 
-function showAll() {
-  render(incidents);
-}
+updateTime();
+renderFeed();
 
-function filterType(type) {
-  render(incidents.filter(i => i.type === type));
-}
+setInterval(() => {
+  updateTime();
+}, 1000);
 
-function refreshData() {
-  updateStatus();
-  render(incidents);
-}
-
-refreshData();
 </script>
 
 </body>
