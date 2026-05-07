@@ -143,6 +143,7 @@
   <button id="btn-Collision" class="active" onclick="setFilter('Collision')">Collisions</button>
   <button id="btn-Hazard" onclick="setFilter('Hazard')">Hazards</button>
   <button id="btn-Closure" onclick="setFilter('Closure')">Closures</button>
+  <button id="btn-Lane Reduction" onclick="setFilter('Lane Reduction')">Lane Reductions</button>
   <button id="btn-All" onclick="setFilter('All')">All</button>
 </div>
 
@@ -175,7 +176,7 @@ function updateTime() {
 function setFilter(type) {
   currentFilter = type;
 
-  ["Collision", "Hazard", "Closure", "All"].forEach(t => {
+  ["Collision", "Hazard", "Closure", "Lane Reduction", "All"].forEach(t => {
     document.getElementById("btn-" + t).classList.remove("active");
   });
 
