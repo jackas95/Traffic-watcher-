@@ -1,20 +1,65 @@
 [
   {
     "type": "Collision",
-    "road": "401 EB near Highbury Ave",
-    "minutesAgo": 3,
-    "note": "Traffic backing up approaching London.",
-    "source": "Waze",
+    "road": "HWY 533 Both Directions",
+    "minutesAgo": 0,
+    "note": "Flooding on HWY 533 Both Directions  between SEC HWY 656-LA CAVE RD, Mattawa and HWY 63 - END OF HWY, Nipissing. All lanes closed.",
+    "source": "511",
     "major": true,
-    "radio": "A collision on 401 eastbound near Highbury Avenue."
+    "radio": "A collision on HWY 533 Both Directions."
   },
   {
     "type": "Collision",
-    "road": "Wonderland Rd at Southdale Rd",
-    "minutesAgo": 11,
-    "note": "Delays building through the intersection.",
-    "source": "Waze",
+    "road": "HWY 7044 Southbound",
+    "minutesAgo": 0,
+    "note": "Flooding on HWY 7044 Southbound  at Hwy 144, Cartier. Lane and SOUTH shoulder closed.",
+    "source": "511",
     "major": false,
-    "radio": "A collision at Wonderland Road and Southdale Road."
+    "radio": "A collision on HWY 7044 Southbound."
+  },
+  {
+    "type": "Collision",
+    "road": "HWY 17 Westbound",
+    "minutesAgo": 0,
+    "note": "Other on HWY 17 Westbound  at MOSQUITO TRAIL, Bissett Creek. 2 lanes and WEST shoulder closed.",
+    "source": "511",
+    "major": false,
+    "radio": "A collision on HWY 17 Westbound."
+  },
+  {
+    "type": "Collision",
+    "road": "HWY 17 Eastbound",
+    "minutesAgo": 0,
+    "note": "Flooding on HWY 17 Eastbound  at OLD WOMAN BAY PICNIC AREA, Algoma. Lane and EAST shoulder closed.",
+    "source": "511",
+    "major": false,
+    "radio": "A collision on HWY 17 Eastbound."
+  },
+  {
+    "type": "Collision",
+    "road": "HWY 805 Both Directions",
+    "minutesAgo": 0,
+    "note": "Flooding on HWY 805 Both Directions  at SEC HWY 539A, River Valley. All lanes closed.",
+    "source": "511",
+    "major": true,
+    "radio": "A collision on HWY 805 Both Directions."
+  },
+  {
+    "type": "Collision",
+    "road": "HWY 607 Both Directions",
+    "minutesAgo": 0,
+    "note": "Flooding on HWY 607 Both Directions  between HWY 64 (END OF HWY), Alban and BAKER'S BAY RD(E), Bigwood. All lanes closed.",
+    "source": "511",
+    "major": true,
+    "radio": "A collision on HWY 607 Both Directions."
+  },
+  {
+    "type": "Collision",
+    "road": "HWY 401 Eastbound",
+    "minutesAgo": 0,
+    "note": "Disabled Vehicle on HWY 401 Eastbound COLLECTOR at ALLEN ROAD, Toronto. Left shoulder and left lane closed.",
+    "source": "511",
+    "major": false,
+    "radio": "A collision on HWY 401 Eastbound."
   }
 ]
