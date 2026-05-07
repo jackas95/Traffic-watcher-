@@ -30,16 +30,14 @@ jobs:
               "woodstock", "ingersoll", "tillsonburg", "aylmer", "goderich", "exeter",
               "grand bend", "stratford", "perth", "huron", "bruce", "tobermory",
               "owen sound", "kincardine", "walkerton", "port stanley",
-              "highbury", "wellington", "wonderland", "commissioners",
-              "hwy 401", "highway 401", "hwy 402", "highway 402",
-              "hwy 4", "highway 4", "hwy 7", "highway 7",
-              "hwy 21", "highway 21"
+              "hwy 401", "highway 401", "hwy 402", "highway 402"
           ]
 
           EXCLUDE_KEYWORDS = [
-              "nipissing", "sudbury", "thunder bay", "timmins",
-              "ottawa", "kingston", "mattawa", "cartier",
-              "toronto", "mississauga", "brampton"
+              "nipissing", "sudbury", "thunder bay", "timmins", "ottawa",
+              "kingston", "mattawa", "cartier", "toronto", "mississauga",
+              "brampton", "aurora", "tay", "springwater", "oro medonte",
+              "severn", "hwy 404", "hwy 11", "hwy 93"
           ]
 
           def normalize(text):
@@ -59,49 +57,25 @@ jobs:
 
               return False
 
-                    def classify_event(text):
+          def classify_event(text):
               t = normalize(text)
 
-              # Collisions
-              if any(word in t for word in [
-                  "collision",
-                  "accident",
-                  "crash",
-                  "rollover"
-              ]):
+              if any(word in t for word in ["collision", "accident", "crash", "rollover"]):
                   return "Collision"
 
-              # Closures
-              if any(word in t for word in [
-                  "all lanes closed",
-                  "road closed",
-                  "ramp closed",
-                  "closed"
-              ]):
+              if any(word in t for word in ["all lanes closed", "road closed", "ramp closed"]):
                   return "Closure"
 
-              # Lane reductions / construction
               if any(word in t for word in [
-                  "lane closed",
-                  "right lane closed",
-                  "left lane closed",
-                  "single lane alternating",
-                  "alternating lane",
-                  "construction",
-                  "maintenance",
-                  "lane restriction",
-                  "shoulder closed"
+                  "lane closed", "right lane closed", "left lane closed",
+                  "alternating lane", "construction", "maintenance",
+                  "lane restriction", "shoulder closed"
               ]):
                   return "Lane Reduction"
 
-              # Hazards
               if any(word in t for word in [
-                  "disabled vehicle",
-                  "debris",
-                  "flooding",
-                  "object on roadway",
-                  "weather hazard",
-                  "animal"
+                  "disabled vehicle", "debris", "flooding", "object on roadway",
+                  "weather hazard", "animal"
               ]):
                   return "Hazard"
 
@@ -110,10 +84,10 @@ jobs:
           def make_radio(event_type, road):
               if event_type == "Collision":
                   return f"A collision on {road}."
-
               if event_type == "Closure":
                   return f"A closure on {road}."
-
+              if event_type == "Lane Reduction":
+                  return f"A lane reduction on {road}."
               return f"A traffic hazard on {road}."
 
           with open("raw-events.json", "r", encoding="utf-8") as f:
@@ -128,12 +102,7 @@ jobs:
               if direction:
                   road = f"{road} {direction}"
 
-              description = (
-                  event.get("Description")
-                  or event.get("Comment")
-                  or "Incident reported."
-              )
-
+              description = event.get("Description") or event.get("Comment") or "Incident reported."
               location_text = f"{road} {description}"
 
               if not in_coverage(location_text):
@@ -147,7 +116,7 @@ jobs:
                   "minutesAgo": 0,
                   "note": description,
                   "source": "511",
-                  "major": bool(event.get("IsFullClosure")),
+                  "major": event_type == "Closure",
                   "radio": make_radio(event_type, road)
               })
 
@@ -158,11 +127,12 @@ jobs:
       - name: Commit updated incidents
         run: |
           git config user.name "traffic-watcher-bot"
-          git config user.email "traffic-watcher-bot@users.noreply.github.com"
+          git config user.email "actions@github.com"
 
-          git pull origin main
+          git reset --hard
+          git pull
 
           git add incidents.json
-          git commit -m "Update incidents" || echo "No changes to commit"
+          git commit -m "Update incidents" || echo "No changes"
 
           git push
