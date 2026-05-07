@@ -59,19 +59,51 @@ jobs:
 
               return False
 
-          def classify_event(text):
+                    def classify_event(text):
               t = normalize(text)
 
-              if any(word in t for word in ["collision", "accident", "crash"]):
+              # Collisions
+              if any(word in t for word in [
+                  "collision",
+                  "accident",
+                  "crash",
+                  "rollover"
+              ]):
                   return "Collision"
 
+              # Closures
               if any(word in t for word in [
-                  "closed",
-                  "closure",
                   "all lanes closed",
-                  "road closed"
+                  "road closed",
+                  "ramp closed",
+                  "closed"
               ]):
                   return "Closure"
+
+              # Lane reductions / construction
+              if any(word in t for word in [
+                  "lane closed",
+                  "right lane closed",
+                  "left lane closed",
+                  "single lane alternating",
+                  "alternating lane",
+                  "construction",
+                  "maintenance",
+                  "lane restriction",
+                  "shoulder closed"
+              ]):
+                  return "Lane Reduction"
+
+              # Hazards
+              if any(word in t for word in [
+                  "disabled vehicle",
+                  "debris",
+                  "flooding",
+                  "object on roadway",
+                  "weather hazard",
+                  "animal"
+              ]):
+                  return "Hazard"
 
               return "Hazard"
 
